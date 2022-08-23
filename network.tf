@@ -1,4 +1,4 @@
-resource "virtual_network" "network" {
+resource "azurerm_virtual_network" "network" {
   source              = "Azure/network/azurerm"
   resource_group_name = azurerm_resource_group.example.name
   address_spaces      = ["10.0.0.0/16", "10.2.0.0/16"]
